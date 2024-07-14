@@ -19,14 +19,14 @@ public class PlayerController
         float verticalInput = Input.GetAxisRaw("Vertical");
 
         Vector2 input = new Vector2(horizontalInput, verticalInput).normalized;
-        view.rb.velocity = input * model.speed;
+        view.rb.velocity = input * model.Speed;
     }
 
     public void SpeedUp()
     {
         if (Input.GetMouseButtonDown(0)) 
         {
-            model.SetSpeed(model.speed + 1);
+            model.SetSpeed(model.Speed + 1);
         }
     }
 
@@ -34,7 +34,7 @@ public class PlayerController
     {
         if (Input.GetMouseButtonDown(1))
         {
-            model.SetSpeed(model.speed - 1);
+            model.SetSpeed(model.Speed - 1);
         }
     }
 }

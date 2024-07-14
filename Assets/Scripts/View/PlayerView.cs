@@ -11,12 +11,8 @@ public class PlayerView : MonoBehaviour
 
     private void Awake()
     {
-        controller = new PlayerController(new PlayerModel(Vector3.zero, speed), this);
-    }
-
-    void Start()
-    {
         rb = GetComponent<Rigidbody2D>();
+        controller = new PlayerController(new PlayerModel(Vector3.zero, speed), this);
     }
 
     private void Update()

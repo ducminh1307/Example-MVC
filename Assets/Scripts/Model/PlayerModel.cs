@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class PlayerModel
 {
-    public Vector3 startPosition { get; private set; }
-    public float speed {  get; private set; }
+    public Vector3 StartPosition { get; private set; }
+    public float Speed {  get; private set; }
 
     public PlayerModel(Vector3 startPosition, float speed)
     {
-        this.startPosition = startPosition;
-        this.speed = speed;
+        this.StartPosition = startPosition;
+        this.Speed = speed;
     }
 
     public void SetSpeed(float speed) 
@@ -18,7 +18,7 @@ public class PlayerModel
         if (speed < 0)
             return;
 
-        this.speed = speed;
+        this.Speed = speed;
     } 
 }
  
